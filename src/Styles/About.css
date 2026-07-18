@@ -55,8 +55,6 @@
 
 .gold-border-1 {
   border: 2px solid #d97706;
-  /*top: 0px;
-  left: 0px;*/
   z-index: 1;
 }
 
@@ -68,9 +66,10 @@
   z-index: 1;
 }
 
-
 .about-image-wrapper:hover .about-img {
-  transform: scale(1.03);
+ transform: scale(0.99);
+ left: 12px;
+ top: 12px;
 }
 
 .about-image-wrapper:hover .gold-border-1 {
@@ -82,7 +81,6 @@
   transform: translate(-12px, -12px);
   border-color: #d97706;
 }
-
 
 
 .about-content-column {

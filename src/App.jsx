@@ -20,7 +20,7 @@ function App() {
       <Contact />
       <Book />
       <Footer />
-      {/* Services, About, Gallery, and Book Pages will go here */}
+     
     </div>
   );
 }

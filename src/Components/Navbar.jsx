@@ -26,9 +26,9 @@ const Navbar = () => {
         <li><a href="#about" onClick={toggleMenu}>About</a></li>
         <li><a href="#services" onClick={toggleMenu}>Services</a></li>
         <li><a href="#gallery" onClick={toggleMenu}>Gallery</a></li>
-        <li><a href="#book" onClick={toggleMenu}>Contact Us</a></li>
+        <li><a href="#contact" onClick={toggleMenu}>Contact Us</a></li>
         <li>
-          <a href="#book" className="nav-cta" onClick={toggleMenu}>
+          <a href="#booking" className="nav-cta" onClick={toggleMenu}>
             BOOK NOW
           </a>
         </li>

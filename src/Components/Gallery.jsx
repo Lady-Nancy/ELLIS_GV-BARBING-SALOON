@@ -14,42 +14,42 @@ const Gallery = () => {
       category: 'CUTS',
       title: 'THE CLASSIC TAPER',
       barber: 'E.G.',
-      imgSrc: '/saloon.jpg'
+      imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn5KIupeaewfFYhN0Ue6HAvMY4FQ-3uLuvFhafzW3myA&s=10'
     },
     {
       id: 2,
       category: 'BEARDS',
       title: 'RAZOR SHARP PERIMETER',
       barber: 'V.V.',
-      imgSrc: '/saloon.jpg'
+      imgSrc: 'https://tse4.mm.bing.net/th/id/OIP.tsGk9obZVJT6BoGcFTUQeAHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3'
     },
     {
       id: 3,
       category: 'STUDIO',
       title: 'THE ROYAL SUITE',
       barber: 'ELLIS G V',
-      imgSrc: '/saloon.jpg'
+      imgSrc: '/barbing1.jpg'
     },
     {
       id: 4,
       category: 'CUTS',
       title: 'MODERN TEXTURED CROP',
       barber: 'E.G.',
-      imgSrc: '/saloon.jpg'
+      imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKkwxULp6vRMSh0gR8VmNv8YEvJz1W9MvpOVrFJ4EMrx3LL-l5HN2xOx5p&s=10'
     },
     {
       id: 5,
       category: 'BEARDS',
       title: 'SCULPTED BEARD & HOT TOWEL',
       barber: 'V.V.',
-      imgSrc: '/saloon.jpg'
+      imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNVBB8I8qIgyKATse4yu0XCw2xbpYhPGIDlU_v4WJNHQ&s=10'
     },
     {
       id: 6,
       category: 'STUDIO',
       title: 'THE DETAILS DRAWER',
       barber: 'ELLIS G V',
-      imgSrc: 'saloon.jpg'
+      imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMY9aL6S1Wts7BPgjcm0iXMuB1QxwfjWVNtf3tmznCWg&s=10'
     }
   ];
 

@@ -146,7 +146,12 @@
   box-shadow: 0 0 30px rgba(217, 119, 6, 0.15);
 }
 
-/* Keyframe values */
+.geometric-box img {
+  width: 176px;
+  height: 175px;
+}
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -210,4 +215,9 @@
     width: 100px;
     height: 100px;
   }
+
+  .geometric-box img {
+  width: 95px;
+  height: 95px;
+}
 }

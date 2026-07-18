@@ -37,8 +37,8 @@ const Footer = () => {
         <div className="footer-info-column">
           <h4 className="footer-column-title">THE SHOP</h4>
           <p className="footer-address">
-            104 Luxury Lane, Suite B<br />
-            Soho, New York
+            Brighton VIC 3186<br />
+            Soho, Australia
           </p>
           <p className="footer-phone">+1 (212) 555-0199</p>
           <p className="footer-email">concierge@ellisgv.com</p>
@@ -52,7 +52,7 @@ const Footer = () => {
             &copy; {currentYear} ELLIS G V. ALL RIGHTS RESERVED.
           </p>
           <p className="creator-credit">
-            DESIGNED BY <span className="gold-accent">NANCY</span>
+          ELLIS GV <span className="gold-accent">BARBING SALOON</span>
           </p>
         </div>
       </div>
