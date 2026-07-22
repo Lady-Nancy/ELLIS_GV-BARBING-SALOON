@@ -3,6 +3,7 @@ import '../Styles/Book.css';
 
 const Book = () => {
   const [step, setStep] = useState(1);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [bookingData, setBookingData] = useState({
     service: '',
     price: '',
@@ -41,7 +42,13 @@ const Book = () => {
     setStep(4);
   };
 
-  const resetBooking = () => {
+  const handleConfirmBooking = () => {
+    // Here you would typically trigger an API call to save the booking
+    setIsModalOpen(true);
+  };
+
+  const closeModalAndReset = () => {
+    setIsModalOpen(false);
     setBookingData({ service: '', price: '', barber: '', date: '', time: '' });
     setStep(1);
   };
@@ -49,8 +56,6 @@ const Book = () => {
   return (
     <section className="booking-section" id="booking">
       <div className="booking-container">
-        
-       
         <div className="booking-header">
           <span className="booking-tag">SECURE YOUR CHAIR</span>
           <h2 className="booking-title">RESERVE AN APPOINTMENT</h2>
@@ -68,8 +73,7 @@ const Book = () => {
         </div>
 
         <div className="booking-card">
-          
-         
+          {/* STEP 1 */}
           {step === 1 && (
             <div className="booking-step-pane">
               <h3 className="pane-title">SELECT A SERVICE</h3>
@@ -91,7 +95,7 @@ const Book = () => {
             </div>
           )}
 
-        
+          {/* STEP 2 */}
           {step === 2 && (
             <div className="booking-step-pane">
               <div className="pane-header-row">
@@ -116,7 +120,7 @@ const Book = () => {
             </div>
           )}
 
-          
+          {/* STEP 3 */}
           {step === 3 && (
             <div className="booking-step-pane">
               <div className="pane-header-row">
@@ -157,7 +161,7 @@ const Book = () => {
             </div>
           )}
 
-         
+          {/* STEP 4 */}
           {step === 4 && (
             <div className="booking-step-pane confirmation-pane">
               <h3 className="pane-title">VERIFY YOUR DETAILS</h3>
@@ -190,19 +194,35 @@ const Book = () => {
                 <button className="back-btn" onClick={() => setStep(3)}>CHANGE DETAILS</button>
                 <button 
                   className="confirm-booking-btn" 
-                  onClick={() => {
-                    alert('Appointment Reserved Successfully!');
-                    resetBooking();
-                  }}
+                  onClick={handleConfirmBooking}
                 >
                   CONFIRM BOOKING
                 </button>
               </div>
             </div>
           )}
-
         </div>
       </div>
+
+      {/* SUCCESS MODAL POPUP */}
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-card">
+            <div className="modal-icon">✓</div>
+            <h3>RESERVATION CONFIRMED</h3>
+            <p className="modal-subtext">We look forward to seeing you!</p>
+            
+            <div className="modal-summary">
+              <p><strong>{bookingData.service}</strong> with <strong>{bookingData.barber}</strong></p>
+              <p>🗓️ {bookingData.date} at {bookingData.time}</p>
+            </div>
+
+            <button className="modal-close-btn" onClick={closeModalAndReset}>
+              DONE & RETURN
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

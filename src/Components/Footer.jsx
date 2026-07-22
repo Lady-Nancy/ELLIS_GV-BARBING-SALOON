@@ -4,11 +4,18 @@ import '../Styles/Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  // Smooth scroll handler
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer className="footer-section">
       <div className="footer-container">
         
-       
         <div className="footer-brand-column">
           <h2 className="footer-logo">ELLIS G V</h2>
           <p className="footer-tagline">
@@ -21,7 +28,6 @@ const Footer = () => {
           </div>
         </div>
 
-       
         <div className="footer-links-column">
           <h4 className="footer-column-title">NAVIGATION</h4>
           <ul className="footer-links-list">
@@ -33,12 +39,11 @@ const Footer = () => {
           </ul>
         </div>
 
-      
         <div className="footer-info-column">
           <h4 className="footer-column-title">THE SHOP</h4>
           <p className="footer-address">
-            Brighton VIC 3186<br />
-            Soho, Australia
+            Shop 2/157 Martin Street Brighton<br />
+            Victoria, Australia
           </p>
           <p className="footer-phone">+1 (212) 555-0199</p>
           <p className="footer-email">concierge@ellisgv.com</p>
@@ -51,9 +56,22 @@ const Footer = () => {
           <p className="copyright-text">
             &copy; {currentYear} ELLIS G V. ALL RIGHTS RESERVED.
           </p>
-          <p className="creator-credit">
-          ELLIS GV <span className="gold-accent">BARBING SALOON</span>
-          </p>
+          
+          {/* Grouped together in a wrapper so they sit right beside each other */}
+          <div className="credit-and-scroll">
+            <p className="creator-credit">
+              ELLIS GV <span className="gold-accent">BARBING SALOON</span>
+            </p>
+            <button 
+              type="button" 
+              className="scroll-top-symbol-btn" 
+              onClick={scrollToTop} 
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &#8593;
+            </button>
+          </div>
         </div>
       </div>
     </footer>

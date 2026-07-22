@@ -144,6 +144,45 @@
   font-weight: 900;
 }
 
+/* Layout container for the bottom row */
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Keeps the credit text and button together on the right */
+.credit-and-scroll {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between text and arrow button */
+}
+
+/* Compact symbol button styling */
+.scroll-top-symbol-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scroll-top-symbol-btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
 
 @media (max-width: 992px) {
   .footer-container {
