@@ -4,7 +4,7 @@ import '../Styles/Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  // Smooth scroll handler
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -39,14 +39,27 @@ const Footer = () => {
           </ul>
         </div>
 
+
         <div className="footer-info-column">
           <h4 className="footer-column-title">THE SHOP</h4>
-          <p className="footer-address">
-            Shop 2/157 Martin Street Brighton<br />
+          <address className="footer-address">
+            Shop 2/157 Martin St, Brighton VIC 3186,<br />
             Victoria, Australia
-          </p>
-          <p className="footer-phone">+1 (212) 555-0199</p>
-          <p className="footer-email">concierge@ellisgv.com</p>
+          </address>
+          
+          <a 
+            href="https://maps.google.com/?q=Shop+2/157+Martin+Street+Brighton+Victoria+Australia" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="directions-link"
+          >
+            GET DIRECTIONS &rarr;
+          </a>
+
+          <div className="contact-details">
+            <p className="footer-phone">+1 (212) 555-0199</p>
+            <p className="footer-email">concierge@ellisgv.com</p>
+          </div>
         </div>
 
       </div>
@@ -57,7 +70,6 @@ const Footer = () => {
             &copy; {currentYear} ELLIS G V. ALL RIGHTS RESERVED.
           </p>
           
-          {/* Grouped together in a wrapper so they sit right beside each other */}
           <div className="credit-and-scroll">
             <p className="creator-credit">
               ELLIS GV <span className="gold-accent">BARBING SALOON</span>

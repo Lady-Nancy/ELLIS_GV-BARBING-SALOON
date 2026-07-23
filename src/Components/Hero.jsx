@@ -17,7 +17,7 @@ const Hero = () => {
         </p>
         
         <div className="hero-buttons">
-          <a href="#booking" className="btn btn-primary">BOOK CHAIR</a>
+         {/* <a href="#booking" className="btn btn-primary">BOOK CHAIR</a> */}
           <a href="#services" className="btn btn-secondary">OUR SERVICES</a>
         </div>
       </div>

@@ -142,7 +142,7 @@
   border: 3px solid #d97706;
   position: absolute;
   transform: rotate(45deg);
-  animation: floatAndRotate 8s linear infinite;
+  animation: floatAndRotate 16s linear infinite;
   box-shadow: 0 0 30px rgba(217, 119, 6, 0.15);
 }
 
@@ -189,7 +189,7 @@
 
 @media (max-width: 900px) {
   .hero-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     padding-top: 6rem;
@@ -197,6 +197,7 @@
 
   .hero-content {
     align-items: center;
+    padding-top: 3em;
   }
 
   .hero-buttons {
@@ -208,7 +209,8 @@
   .hero-graphic {
     width: 200px;
     height: 200px;
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
+    margin-top: 2rem;
   }
 
   .geometric-box {
